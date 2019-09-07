@@ -1,0 +1,25 @@
+<div class="container">
+        <div class="card-body">
+              <h4 class="card-header">Submit your new posts here...</h4> 
+              </div>
+    <form novalidate [formGroup]="form" (ngSubmit)=savePost(form)>
+      <div class="form-group">
+            <label for="title">Title:</label>
+          
+            <textarea class="form-control" formControlName="title" rows="1" id="Title"></textarea>
+          </div>
+          <div class="form-group">
+                <label for="post">Post:</label>
+                <textarea class="form-control" rows="5" id="Post" formControlName="post"></textarea>
+              </div>
+
+              <div class="form-group">
+                  <label for="author">Author:</label>
+                  <textarea class="form-control" rows="1" id="Post" formControlName="author"></textarea>
+                </div>
+              <div>
+                  <button class="btn btn-success">Save</button>
+              </div>
+    </form>
+</div>
+
